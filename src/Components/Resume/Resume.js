@@ -1,10 +1,14 @@
  import './Resume.scss';
+ import Squares from '../Squares/Squares';
  
  function Resume () {
     return (
-        <>
-        this is resume
-        </>
+        <section className='resume'>
+            <p className='resume__title'>
+                Resume 
+            </p>
+            <Squares />
+        </section>
     )
  }
 

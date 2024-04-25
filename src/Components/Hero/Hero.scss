@@ -15,7 +15,7 @@
         top: 0;
         left: 0;
         width: 100%; // Full width of the parent
-        height: 324px; // Full height of the parent
+        height: 322px; // Full height of the parent
         background-color: rgba(0.2196, 0.0902, 0.3647, 0.6); // Semi-transparent greyish-black color
         z-index: 1; // Ensure the overlay is above the background image
     }
@@ -24,8 +24,9 @@
         position: relative;
         color: white;
         padding: 12px 32px 0px 32px;
-        line-height: 23px;
+        line-height: 25px;
         font-weight: 600;
         z-index: 2;
+        font-size: 20px;
     }
 }

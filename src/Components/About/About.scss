@@ -7,13 +7,15 @@
     // background-image: linear-gradient(to bottom, #14041D, #481130);
     background-image: linear-gradient(to bottom, $DarkPurple, $LightPurple);
     color: $White;
-
+    position: relative;
+    top: -1px;
 }
+
 .introduction {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
     &__left {
 
@@ -25,7 +27,8 @@
 
         &--info {
             padding-bottom: 6px;
-            font-size: 14px;
+            font-size: 12px;
+            line-height: 13px;
 
             &--job {
                 font-weight: 600;

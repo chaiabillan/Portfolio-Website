@@ -1,0 +1,22 @@
+@use '../../styles/partials/colours' as *;
+@use '../../styles/partials/mixins' as *;
+
+.links {
+    position: fixed;
+    z-index: 4;
+    bottom: 10px;
+    right: 10px;
+    color: $DarkPurple;
+    display: flex;
+    flex-direction: column; // Display the spans in a column
+    align-items: flex-end; 
+
+    &__indiv {
+        // text-align: right;
+        background-color: white;
+        margin: 6px;
+        padding: 6px;
+        font-size: 10px;
+        border-radius: 10px;
+    }
+}
