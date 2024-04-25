@@ -3,7 +3,7 @@
 
 .hero {
     background-image: url('../../assets/images/_8b6c3721-05a8-4c78-bc97-7e68b2a2e2bb.jpeg');
-    height: 200px;
+    height: 323px;
     background-size: cover; 
     background-position: center;
     display: flex;
@@ -15,7 +15,7 @@
         top: 0;
         left: 0;
         width: 100%; // Full width of the parent
-        height: 200px; // Full height of the parent
+        height: 324px; // Full height of the parent
         background-color: rgba(0.2196, 0.0902, 0.3647, 0.6); // Semi-transparent greyish-black color
         z-index: 1; // Ensure the overlay is above the background image
     }

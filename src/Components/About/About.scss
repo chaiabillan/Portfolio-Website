@@ -1,0 +1,73 @@
+@use '../../styles/partials/colours' as *;
+@use '../../styles/partials/mixins' as *;
+
+.about {
+    padding: 16px;
+    // background-color: $DarkPurple;
+    // background-image: linear-gradient(to bottom, #14041D, #481130);
+    background-image: linear-gradient(to bottom, $DarkPurple, $LightPurple);
+    color: $White;
+
+}
+.introduction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &__left {
+
+        &--name {
+            font-size: 20px;
+            padding: 12px;
+            font-weight: 600;
+        }
+
+        &--info {
+            padding-bottom: 6px;
+            font-size: 14px;
+
+            &--job {
+                font-weight: 600;
+            }
+
+            &--icon {
+                height: 12px;
+                width: 12px;
+            }
+        }
+    }
+
+    &__right {
+        width: 87px;
+        height: 87px;
+        border-radius: 50%;
+        // border: 1px solid white;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+}
+
+.bio {
+    padding: 20px 0px 12px 0px;
+    font-size: 15px;
+}
+
+.education {
+    padding: 10px 0px 2px 0px;
+
+    &__icon {
+        height: 20px;
+        width: 20px;
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    &__info {
+        font-size: 12px;
+        padding-top: 4px;
+    }
+}

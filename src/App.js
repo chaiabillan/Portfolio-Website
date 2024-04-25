@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './Components/Header/Header';
 import Resume from './Components/Resume/Resume';
 import Hero from './Components/Hero/Hero';
+import About from './Components/About/About';
 
 
 function App() {
@@ -12,8 +13,8 @@ function App() {
       <BrowserRouter>
         <Header />
         <Hero />
-        
-        {/* <Resume /> */}
+        <About />
+        <Resume />
       </BrowserRouter>
       
     </div>
