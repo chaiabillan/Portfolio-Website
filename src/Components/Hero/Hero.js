@@ -4,7 +4,7 @@ function Hero () {
 
     return (
         <section className='hero'>
-            this is the hero
+            <p className='hero__text'>At the intersection of synapses and syntax, understanding the brain’s logic enhances every line of code.</p>
         </section>
     )
 }

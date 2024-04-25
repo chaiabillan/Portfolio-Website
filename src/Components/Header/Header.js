@@ -25,16 +25,16 @@ function Header() {
             </header>
             <div className={`menu ${dropdownOpen ? 'open' : ''}`} onClick={closeDropdown}>
                 <Link to='#' className='menu__link'>
-                    Home
-                </Link>
-                <Link to='#' className='menu__link'>
-                    Projects
+                    About
                 </Link>
                 <Link to='#' className='menu__link'>
                     Resume
                 </Link>
                 <Link to='#' className='menu__link'>
-                    About
+                    Skills
+                </Link>
+                <Link to='#' className='menu__link'>
+                    Projects
                 </Link>
             </div>
         </>

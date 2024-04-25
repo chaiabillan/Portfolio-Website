@@ -2,12 +2,13 @@
 @use '../../styles/partials/mixins' as *;
 
 header {
-    background-color: $LightPurple;
+    background-color: transparent;
     height: 45px;
     margin: 0px;
     padding-top: 15px;
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 .mobile-header {
@@ -17,28 +18,32 @@ header {
     &__list {
         position: absolute;
         left: 10px;
-        color: white;
+        color: $White;
     }
 
     &__name {
         margin: 0 auto;
-        color: white;
+        color: $White;
+        font-weight: 600;
+        z-index: 2;
+        position: relative;
     }
 }
 
 .menu {
     display: none;
     flex-direction: column;
-    background-color: $LightPurple;
+    background-color: #38175D;
     position: fixed;
     top: 45px;
     width: 100%;
+    z-index: 3;
 
     &__link {
         text-decoration: none;
         color: white;
         padding: 16px 0px;
-        border-top: 1px white solid;
+        border-bottom: 1px white solid;
 
         &:hover {
             background-color: $DarkPurple;

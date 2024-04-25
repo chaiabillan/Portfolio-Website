@@ -12,7 +12,8 @@ function App() {
       <BrowserRouter>
         <Header />
         <Hero />
-        <Resume />
+        
+        {/* <Resume /> */}
       </BrowserRouter>
       
     </div>
