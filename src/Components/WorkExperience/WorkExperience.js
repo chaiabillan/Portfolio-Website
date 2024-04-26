@@ -1,12 +1,27 @@
 import './WorkExperience.scss';
 import { Link } from 'react-router-dom';
-// import cookies from '../../assets/images/classic-chocolate-chip-cookies.jpg';
+import Founder from '../Founder/Founder';
+import { useState, useRef, useEffect } from 'react';
 
-function WorkExperience() {
+function WorkExperience({onFounderClick}) {
+
+    const [selectedExperience, setSelectedExperience] = useState(null);
+    const experienceRef = useRef(null);
+
+    useEffect(() => {
+        if (selectedExperience !== null && experienceRef.current) {
+            experienceRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    }, [selectedExperience]);
+
+    // Conditional rendering based on the selectedExperience state
+    if (selectedExperience === 'Founder') {
+        return <Founder />;
+    }
 
     return (
-        <section className='work-experience selected'>
-            <Link to='#' className='experience cookies'>
+        <section className='work-experience selected' ref={experienceRef}>
+            <button onClick={onFounderClick} className='experience cookies'>
                 <p className='experience__company'>
                     Chaia's chocolate chip cookies
                 </p>
@@ -16,7 +31,7 @@ function WorkExperience() {
                 <p className='experience__date'>
                     March 2024 - Present
                 </p>
-            </Link>
+            </button>
             <Link to='#' className='experience'>
                 <p className='experience__company'>
                     Emilio Finatti Pizzeria

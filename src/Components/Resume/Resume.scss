@@ -4,7 +4,6 @@
 .resume {
     position: relative;
     top: -2px;
-    // height: 500px;
     padding: 32px 16px;
     background-image: linear-gradient(to bottom, $LightPurple, $DarkPurple);
 
@@ -22,20 +21,23 @@
         white-space: nowrap;
 
         &--indiv {
-            background-color: white;
-            color: $DarkPurple;
-            margin: 0px 6px 12px 6px;
-            padding: 5px 10px;
+            background-color: $DarkPurple;
+            color: $White;
+            margin: 0px 1px 12px 6px;
+            padding: 4px 7px;
             border-radius: 10px;
             font-size: 13px;
             font-weight: 600;
             text-decoration: none;
             list-style: none;
             text-decoration: none;
+            border: none;
+            outline: none;
         }
 
         &--indiv.selected {
-            display: flex;
+            background-color: $White;
+            color: $DarkPurple;
         }
     }
 }
