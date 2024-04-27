@@ -1,2 +1,18 @@
 @use '../../styles/partials/colours' as *;
 @use '../../styles/partials/mixins' as *;
+
+.big-sisters {
+    background-image: url('../../assets/images/bigsisters.png');
+}
+
+.dragon-boat {
+    background-image: url('../../assets/images/dragonboatfestival.png');
+}
+
+.community-art {
+    background-image: url('../../assets/images/art-project.png');
+}
+
+.family-place {
+    background-image: url('../../assets/images/family-place.png');
+}

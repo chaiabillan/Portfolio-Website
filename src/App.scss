@@ -42,3 +42,82 @@
     padding: 0px 0px 12px 0px;
     text-align: left;
 }
+
+.work-experience {
+    display: none;
+    flex-wrap: wrap;
+
+    &.selected {
+        display: flex;
+    }
+}
+
+.experience {
+    height: 165px;
+    width: 46%;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5.75px;
+    text-decoration: none;
+    color: $White;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-size: cover; 
+    background-position: center;
+    border: none;
+    outline: none;
+    align-items: center;
+    text-shadow: 2px 2px 2px black;
+
+    &::after {
+        content: ""; // Empty content for the pseudo-element
+        position: absolute; // Position absolute for the pseudo-element
+        top: 0;
+        left: 0;
+        width: 100%; // Full width of the parent
+        height: 165px; // Full height of the parent
+        border-radius: 10px;
+        background-color: rgba(0.2196, 0.0902, 0.3647, 0.84); // Semi-transparent greyish-black color
+        z-index: 1; // Ensure the overlay is above the background image
+        transition: 0.25s ease-in;
+        // opacity: 0;
+    }
+
+    &:hover::after {
+        background-color: transparent; // Semi-transparent greyish-black color
+        z-index: 0;
+        // display: none;
+        // color: black
+    }
+
+    &:hover {
+        // display: none;
+        color: transparent;
+        text-shadow: none;
+
+    }
+
+    &__company {
+        font-size: 14px;
+        z-index: 2;
+
+        &:hover {
+            display: none;
+        }
+    }
+
+    &__role {
+        font-weight: 600;
+        z-index: 2;
+        text-align: center;
+        font-size: 16px;
+
+    }
+
+    &__date {
+        font-size: 14px;
+        z-index: 2;
+    }
+}

@@ -1,70 +1,46 @@
 @use '../../styles/partials/colours' as *;
 @use '../../styles/partials/mixins' as *;
 
-.work-experience {
-    display: none;
-    flex-wrap: wrap;
-
-    &.selected {
-        display: flex;
-    }
-}
-
-.experience {
-    height: 165px;
-    width: 46%;
-    background-color: white;
-    border-radius: 10px;
-    margin: 5.75px;
-    text-decoration: none;
-    color: $White;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-size: cover; 
-    background-position: center;
-    border: none;
-    outline: none;
-    align-items: center;
-
-    &::after {
-        content: ""; // Empty content for the pseudo-element
-        position: absolute; // Position absolute for the pseudo-element
-        top: 0;
-        left: 0;
-        width: 100%; // Full width of the parent
-        height: 165px; // Full height of the parent
-        border-radius: 10px;
-        background-color: rgba(0.2196, 0.0902, 0.3647, 0.7); // Semi-transparent greyish-black color
-        z-index: 1; // Ensure the overlay is above the background image
-    }
-
-    &:hover {
-        background-color: rgba(0.2196, 0.0902, 0.3647, 0.9); // Semi-transparent greyish-black color
-    }
-
-    &__company {
-        font-size: 14px;
-        z-index: 2;
-    }
-
-    &__role {
-        font-weight: 600;
-        z-index: 2;
-        text-align: center;
-        font-size: 16px;
-
-    }
-
-    &__date {
-        font-size: 14px;
-        z-index: 2;
-    }
-}
 
 .cookies {
     background-image: url('../../assets/images/classic-chocolate-chip-cookies.jpg');
+}
+
+.graphic-design {
+    background-image: url('../../assets/images/graphic-designer.png');
+}
+
+.tutoring {
+    background-image: url('../../assets/images/tutor.jpeg');
+}
+
+.soccer {
+    background-image: url('../../assets/images/soccer.png');
+}
+
+.waterpark {
+    background-image: url('../../assets/images/waterpark.png');
+
+}
+
+.pharmacy {
+    background-image: url('../../assets/images/pharmacy.png');
+
+}
+
+.bio-lab {
+    background-image: url('../../assets/images/QAAssistant.png');
+
+}
+
+.barista {
+    background-image: url('../../assets/images/barista.png');
+
+}
+
+.grocery-store {
+    background-image: url('../../assets/images/cashier.png');
+
 }
 
 .selected {
