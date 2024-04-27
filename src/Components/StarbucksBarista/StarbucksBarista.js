@@ -1,6 +1,6 @@
 import { ArrowLeft } from 'react-bootstrap-icons';
 
-function GraphicDesigner ({onGoBack}) {
+function StarbucksBarista ({onGoBack}) {
 
     return (
         <section className='experience-details'>
@@ -8,7 +8,7 @@ function GraphicDesigner ({onGoBack}) {
             < ArrowLeft />
         </button>
         <p className='experience-details__title'>
-            Graphic Designer
+            Starbucks
         </p>
 
         <li className='experience-details__list-item'>
@@ -21,4 +21,4 @@ function GraphicDesigner ({onGoBack}) {
     )
 }
 
-export default GraphicDesigner
+export default StarbucksBarista

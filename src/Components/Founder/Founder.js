@@ -7,7 +7,6 @@ import { ArrowLeft } from 'react-bootstrap-icons';
 function Founder({onGoBack}) {
 
     return (
-        <>
             <section className='experience-details'>
                 <button className='go-back' onClick={onGoBack}>
                     < ArrowLeft />
@@ -23,7 +22,6 @@ function Founder({onGoBack}) {
                     Donated $X to BC Cancer Foundation and
                 </li>
             </section>
-        </>
     )
 }
 

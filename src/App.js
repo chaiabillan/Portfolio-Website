@@ -5,7 +5,7 @@ import Header from './Components/Header/Header';
 import Resume from './Components/Resume/Resume';
 import Hero from './Components/Hero/Hero';
 import About from './Components/About/About';
-import Links from './Components/Links/Links';
+// import Links from './Components/Links/Links';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Hero />
         <About />
         <Resume />
-        <Links />
+        {/* <Links /> */}
       </BrowserRouter>
       
     </div>

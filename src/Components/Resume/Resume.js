@@ -1,11 +1,20 @@
 import './Resume.scss';
 import WorkExperience from '../WorkExperience/WorkExperience';
 import Founder from '../Founder/Founder';
+import GraphicDesigner from '../GraphicDesigner/GraphicDesigner';
+import Tutor from '../Tutor/Tutor';
+import RegionalCoordinator from '../RegionalCoordinator/RegionalCoordinator';
 import ResearchExperience from '../ResearchExperience/ResearchExperience';
 import Volunteering from '../Volunteering/Volunteering';
 import Certifications from '../Certifications/Certifications';
-import { button } from 'react-router-dom';
+// import { button } from 'react-router-dom';
 import { useState, useRef, useEffect } from 'react';
+import Supervisor from '../Supervisor/Supervisor';
+import QAAssistant from '../QAAssistant/QAAssistant';
+import WavesBarista from '../WavesBarista/WavesBarista';
+import StarbucksBarista from '../StarbucksBarista/StarbucksBarista';
+import Cashier from '../Cashier/Cashier';
+import PharmacyTechnician from '../PharmacyTechnician/PharmacyTechnician';
 
 
 function Resume() {
@@ -22,8 +31,9 @@ function Resume() {
         setSelectedResource(resource);
     }
 
+    // Go back to the WorkExperience section
     const handleGoBack = () => {
-        setSelectedResource('work-experience'); // Go back to the WorkExperience section
+        setSelectedResource('work-experience'); 
     };
 
     return (
@@ -48,11 +58,50 @@ function Resume() {
             <section>
 
                 {selectedResource === 'work-experience' && (
-                    <WorkExperience onFounderClick={() => handleResourceClick('founder')} />
+                    <WorkExperience 
+                        onFounderClick={() => handleResourceClick('founder')} 
+                        onGraphicClick={() => handleResourceClick('graphic-designer')} 
+                        onTutorClick={() => handleResourceClick('tutor')} 
+                        onRegionalCoordinatorClick={() => handleResourceClick('regional-coordinator')} 
+                        onSupervisorClick={() => handleResourceClick('supervisor')} 
+                        onPharmacyClick={() => handleResourceClick('pharmacy')}
+                        onQAClick={() => handleResourceClick('qa-assistant')}
+                        onWavesClick={() => handleResourceClick('waves-barista')}
+                        onStarbucksClick={() => handleResourceClick('starbucks-barista')}
+                        onCashierClick={() => handleResourceClick('cashier')}
+                    />
                 )}
                 {selectedResource === 'founder' && (
                     <Founder onGoBack={handleGoBack} />
                 )}
+                {selectedResource === 'graphic-designer' && (
+                    <GraphicDesigner onGoBack={handleGoBack} />
+                )}
+                {selectedResource === 'tutor' && (
+                    <Tutor onGoBack={handleGoBack} />
+                )}
+                {selectedResource === 'regional-coordinator' && (
+                    <RegionalCoordinator onGoBack={handleGoBack} />
+                )}
+                {selectedResource === 'supervisor' && (
+                    <Supervisor onGoBack={handleGoBack} />
+                )}   
+                {selectedResource === 'pharmacy' && (
+                    <PharmacyTechnician onGoBack={handleGoBack} />
+                )}       
+                {selectedResource === 'qa-assistant' && (
+                    <QAAssistant onGoBack={handleGoBack} />
+                )}       
+                {selectedResource === 'waves-barista' && (
+                    <WavesBarista onGoBack={handleGoBack} />
+                )}       
+                {selectedResource === 'starbucks-barista' && (
+                    <StarbucksBarista onGoBack={handleGoBack} />
+                )}    
+                {selectedResource === 'cashier' && (
+                    <Cashier onGoBack={handleGoBack} />
+                )}                
+
 
                 {selectedResource === 'research-experience' && (
                     <ResearchExperience />

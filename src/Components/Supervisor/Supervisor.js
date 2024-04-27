@@ -1,6 +1,6 @@
 import { ArrowLeft } from 'react-bootstrap-icons';
 
-function GraphicDesigner ({onGoBack}) {
+function Supervisor ({onGoBack}) {
 
     return (
         <section className='experience-details'>
@@ -8,11 +8,11 @@ function GraphicDesigner ({onGoBack}) {
             < ArrowLeft />
         </button>
         <p className='experience-details__title'>
-            Graphic Designer
+            Supervisor
         </p>
 
         <li className='experience-details__list-item'>
-            i created 
+            i managed 
         </li>
         <li className='experience-details__list-item'>
             increased sales
@@ -21,4 +21,4 @@ function GraphicDesigner ({onGoBack}) {
     )
 }
 
-export default GraphicDesigner
+export default Supervisor
