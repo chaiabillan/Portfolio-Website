@@ -47,3 +47,12 @@
     display: flex;
 }
  
+.see-more-button {
+    background-color: $DarkPurple;
+    color: $White;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 25px;
+}

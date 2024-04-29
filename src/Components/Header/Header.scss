@@ -30,6 +30,17 @@ header {
         font-size: 20px;
         text-shadow: 6px 6px 6px black;
     }
+
+    @include tablet {
+
+    }
+
+    @include desktop {
+
+        &__name {
+            font-size: 34px;
+        }
+    }
 }
 
 .menu {

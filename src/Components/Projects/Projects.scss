@@ -1,0 +1,9 @@
+@use '../../styles/partials/colours' as *;
+@use '../../styles/partials/mixins' as *;
+
+.projects {
+    background-image: linear-gradient(to bottom, $LightPurple, $DarkPurple);
+    height: 400px;
+    position: relative;
+    top: -2px;
+}

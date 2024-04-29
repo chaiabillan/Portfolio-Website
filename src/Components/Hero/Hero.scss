@@ -29,4 +29,32 @@
         z-index: 2;
         font-size: 20px;
     }
+
+    @include tablet {
+        height: 412px;
+
+        &::after {
+            height: 411px;
+        }
+
+        &__text {
+            padding: 12px 200px 0px 200px;
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }
+
+    @include desktop {
+        height: 600px;
+
+        &::after {
+            height: 600px;
+        }
+
+        &__text {
+            padding: 12px 325px 0px 325px;
+            font-size: 34px;
+            line-height: 43px;
+        }
+    }
 }

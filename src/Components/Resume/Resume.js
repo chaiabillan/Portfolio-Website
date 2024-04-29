@@ -22,6 +22,7 @@ import FamilyPlace from '../FamilyPlace/FamilyPlace';
 
 function Resume() {
     const [selectedResource, setSelectedResource] = useState(null);
+    const [showAllExperiences, setShowAllExperiences] = useState(false);
     const resumeRef = useRef(null);
 
     useEffect(() => {
@@ -54,7 +55,7 @@ function Resume() {
         },
         {
             company: "Emilio Finatti Pizzeria",
-            role: "Graphic Designer | Front of House",
+            role: "Graphic Designer",
             date: "August 2023 - Present",
             className: "graphic-design",
             onClick: () => handleResourceClick('graphic-designer'),
@@ -152,9 +153,9 @@ function Resume() {
 
     return (
         <section className='resume' ref={resumeRef}>
-            <p className='resume__title'>
+            {/* <p className='resume__title'>
                 Resume
-            </p>
+            </p> */}
             <section className='resume__options'>
                 <button onClick={() => handleResourceClick('work-experience')} className={`resume__options--indiv ${selectedResource === 'work-experience' ? 'selected' : ''}`}>
                     Work Experience
@@ -173,7 +174,11 @@ function Resume() {
 
 
                 {selectedResource === 'work-experience' && (
-                    <WorkExperience experiences={experiences} />
+                    <WorkExperience 
+                        experiences={experiences}
+                        showAllExperiences={showAllExperiences}
+                        setShowAllExperiences={setShowAllExperiences}
+                    />
                 )}
 
                     {selectedResource === 'founder' && (

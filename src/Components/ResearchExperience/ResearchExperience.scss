@@ -1,2 +1,89 @@
 @use '../../styles/partials/colours' as *;
 @use '../../styles/partials/mixins' as *;
+
+.research {
+    color: white;
+
+    &__icon {
+        width: 30px;
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 1)) invert(1);    
+        margin-top: 16px;
+        color: white;
+
+        &--cert {
+            filter: none;
+            margin: 13px 0px 7px 0px;
+        }
+    }
+
+    &__lab {
+        font-weight: bold;
+        padding: 0px 0px 8px 0px;
+
+        &--cert {
+            font-weight: normal;
+        }
+    }
+
+    &__title {
+        font-weight: bold;
+        padding-bottom: 8px;
+    }
+
+    &__date {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    &__duties {
+        padding: 10px;
+        font-size: 14px;
+
+        &--top {
+            border-top: 1px solid white;
+        }
+    }
+
+    @include tablet {
+
+        &__icon {
+            width: 50px;
+            height: 24px;
+        }
+    }
+
+    @include desktop {
+        padding: 10px 128px;
+
+        &__icon {
+            width: 50px;
+            height: 50px;
+
+            &--cert {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        &__lab {
+            font-size: 24px;
+        }
+
+        &__title {
+            font-size: 20px;
+        }
+
+        &__date {
+            font-size: 16px;
+        }
+
+        &__duties {
+            font-size: 18px;
+            line-height: 26px;
+
+            &--top {
+                padding-top: 20px;
+            }
+        }
+    }
+}

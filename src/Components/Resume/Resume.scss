@@ -5,7 +5,7 @@
     position: relative;
     top: -2px;
     padding: 32px 16px;
-    background-image: linear-gradient(to bottom, $LightPurple, $DarkPurple);
+    background-image: linear-gradient(to bottom, $DarkPurple, $LightPurple);
 
     &__title {
         color: white;
@@ -33,11 +33,41 @@
             text-decoration: none;
             border: none;
             outline: none;
+            transition: 0.3s;
+
+            &:hover {
+                background-color: $White;
+                color: $DarkPurple;
+            }
         }
 
         &--indiv.selected {
             background-color: $White;
             color: $DarkPurple;
+        }
+    }
+
+    @include tablet {
+        padding: 32px 105px;
+
+        &__options {
+            justify-content: center;
+
+            &--indiv {
+                font-size: 15px;
+                padding: 4px 9px;
+            }
+        }
+    }
+
+    @include desktop {
+        padding: 64px 230px;
+
+        &__options {
+
+            &--indiv {
+                font-size: 23px;
+            }
         }
     }
 }

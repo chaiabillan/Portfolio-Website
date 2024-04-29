@@ -49,11 +49,65 @@
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     }
 
+    @include tablet {
+        justify-content: center;
+        margin-top: 24px;
+
+        &__left {
+            padding-right: 20px;
+
+            &--name {
+                font-size: 24px;
+            }
+
+            &--info {
+                font-size: 16px;
+                line-height: 16px;
+            }
+        }
+
+        &__right {
+            width: 111px;
+            height: 111px;
+        }
+    }
+
+    @include desktop {
+        margin-top: 48px;
+
+        &__left {
+            padding-right: 56px;
+
+            &--name {
+                font-size: 34px;
+                padding-bottom: 25px;
+            }
+
+            &--info {
+                font-size: 21px;
+                line-height: 24px;
+            }
+        }
+
+        &__right {
+            height: 200px;
+            width: 200px;
+        }
+    }
 }
 
 .bio {
     padding: 47px 0px 28px 0px;
     font-size: 15px;
+
+    @include tablet {
+        font-size: 18px;
+    }
+
+    @include desktop {
+        font-size: 25px;
+        padding: 70px 0px 58px 0px;
+    }
 }
 
 .education {
@@ -72,5 +126,34 @@
     &__info {
         font-size: 12px;
         padding-top: 4px;
+    }
+
+    @include tablet {
+
+        &__title {
+            font-size: 16px;
+        }
+
+        &__info {
+            font-size: 14px;
+        }
+    }
+
+    @include desktop {
+
+        &__icon {
+            height: 32px;
+            width: 32px;
+        }
+
+        &__title {
+            font-size: 23px;
+            padding: 8px 0px 8px 0px;
+        }
+
+        &__info {
+            font-size: 19px;
+            padding: 7px;
+        }
     }
 }

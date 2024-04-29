@@ -5,6 +5,8 @@ import Header from './Components/Header/Header';
 import Resume from './Components/Resume/Resume';
 import Hero from './Components/Hero/Hero';
 import About from './Components/About/About';
+import Footer from './Components/Footer/Footer';
+import Projects from './Components/Projects/Projects';
 // import Links from './Components/Links/Links';
 
 function App() {
@@ -14,8 +16,10 @@ function App() {
         <Header />
         <Hero />
         <About />
+        <Projects />
         <Resume />
         {/* <Links /> */}
+        <Footer />
       </BrowserRouter>
       
     </div>
