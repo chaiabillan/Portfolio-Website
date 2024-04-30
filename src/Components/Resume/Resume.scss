@@ -4,7 +4,7 @@
 .resume {
     position: relative;
     top: -2px;
-    padding: 32px 16px;
+    padding: 45px 16px;
     background-image: linear-gradient(to bottom, $DarkPurple, $LightPurple);
 
     &__title {
@@ -34,6 +34,7 @@
             border: none;
             outline: none;
             transition: 0.3s;
+            cursor: pointer;
 
             &:hover {
                 background-color: $White;

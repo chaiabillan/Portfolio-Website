@@ -3,7 +3,46 @@
 
 .projects {
     background-image: linear-gradient(to bottom, $LightPurple, $DarkPurple);
-    height: 400px;
+    // height: 400px;
     position: relative;
     top: -2px;
+    padding: 16px 10px 16px 10px;
+
+    &__title {
+        color: white;
+        font-weight: bold;
+        padding-bottom: 16px;
+        font-size: 20px;
+    }
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.skill {
+    width: 31px;
+    height: 35px;
+    background-color: white; /* Blue color, you can change this */
+    position: relative;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border: none;
+    color: $DarkPurple; /* Text color */
+    font-size: 16px; /* Adjust as needed */
+    cursor: pointer;
+    margin-top: -5px;
+
+    &__image {
+       width: 120%;
+       height: 120%;
+       object-fit: contain;
+    }
 }

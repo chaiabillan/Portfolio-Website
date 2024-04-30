@@ -153,15 +153,15 @@ function Resume() {
 
     return (
         <section className='resume' ref={resumeRef}>
-            {/* <p className='resume__title'>
-                Resume
-            </p> */}
+            <p className='resume__title'>
+                Experience
+            </p>
             <section className='resume__options'>
                 <button onClick={() => handleResourceClick('work-experience')} className={`resume__options--indiv ${selectedResource === 'work-experience' ? 'selected' : ''}`}>
-                    Work Experience
+                    Work 
                 </button>
                 <button onClick={() => handleResourceClick('research-experience')} className={`resume__options--indiv ${selectedResource === 'research-experience' ? 'selected' : ''}`}>
-                    Research Experience
+                    Research 
                 </button>
                 <button onClick={() => handleResourceClick('volunteering')} className={`resume__options--indiv ${selectedResource === 'volunteering' ? 'selected' : ''}`}>
                     Volunteering

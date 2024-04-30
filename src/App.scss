@@ -72,6 +72,7 @@
     outline: none;
     align-items: center;
     text-shadow: 2px 2px 2px black;
+    cursor: pointer;
 
     &::after {
         content: ""; // Empty content for the pseudo-element
@@ -95,12 +96,7 @@
     &:hover {
         color: transparent;
         text-shadow: none;
-        // background-color: black;
     }
-
-    // &:hover.__role {
-    //     background-color: black;
-    // }
 
     &__company {
         font-size: 14px;
@@ -160,6 +156,53 @@
             font-size: 22px;
         }
     }
+}
 
-    
+.project {
+    background-color: white;
+    border-radius: 10px;
+    margin: 16px 0px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+
+    &__top {
+        display: flex;
+        align-items: flex-start;
+
+        &--title {
+            font-weight: bold;
+            padding-bottom: 8px;
+            font-size: 15px;
+        }
+
+        &--github {
+            margin-left: 10px;
+        }
+    }
+
+    &__middle {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__image {
+        width: 50px;
+        height: 55px;
+        margin-right: 10px;
+    }
+
+
+
+    &__details {
+        font-size: 14px;
+        text-align: left;
+        padding-inline-start: 10px;
+    }
+
+    &__link {
+        padding-top: 10px;
+        font-size: 14px;
+    }
 }
