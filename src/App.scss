@@ -203,6 +203,11 @@
         padding-top: 10px;
         font-size: 14px;
     }
+
+    @include tablet {
+        border: 4px solid black;
+        margin: 5px 112px;
+    }
 }
 
 .selected {
