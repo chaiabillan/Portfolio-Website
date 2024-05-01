@@ -22,7 +22,7 @@ import ProjectBandSite from '../ProjectBandSite/ProjectBandSite';
 import { useState } from 'react';
 
 
-function Projects () {
+function Projects() {
     const [selectedProjects, setSelectedProjects] = useState(null);
 
     const handleProjectClick = (project) => {
@@ -31,63 +31,71 @@ function Projects () {
 
     return (
         <section className="projects">
-            <p className='projects__title'> 
-                Projects 
+            <p className='projects__title'>
+                Projects
             </p>
             <section className='skills'>
-                <button className='skill'>
+                <button className='skill' onClick={() => handleProjectClick(null)}>
                     All
                 </button>
-                <button className='skill'>
+                <button onClick={() => handleProjectClick('bootstrap')} className={`skill ${selectedProjects === 'bootstrap' ? 'selected' : ''}`}>
                     <Bootstrap />
                 </button>
-                <button className='skill mysql'>
-                    <img className='skill__image' src={MySQL} alt='MySQL'/>
+                <button onClick={() => handleProjectClick('mysql')} className={`skill ${selectedProjects === 'mysql' ? 'selected' : ''}`}>
+                    <img className='skill__image' src={MySQL} alt='MySQL' />
                 </button>
-                <button className='skill react'>
-                    <img className='skill__image' src={ReactLogo} alt='react'/>
+                <button onClick={() => handleProjectClick('react')} className={`skill ${selectedProjects === 'react' ? 'selected' : ''}`}>
+                    <img className='skill__image' src={ReactLogo} alt='react' />
                 </button>
-                <button className='skill html'>
-                    <img className='skill__image' src={html} alt='html'/>
+                <button onClick={() => handleProjectClick('html')} className={`skill ${selectedProjects === 'html' ? 'selected' : ''}`}>
+                    <img className='skill__image' src={html} alt='html' />
                 </button>
-                <button className='skill sass'>
-                    <img className='skill__image' src={sass} alt='sass'/>
+                <button onClick={() => handleProjectClick('sass')} className={`skill ${selectedProjects === 'sass' ? 'selected' : ''}`}>
+                    <img className='skill__image' src={sass} alt='sass' />
                 </button>
-                <button className='skill json'>
-                    <img className='skill__image' src={json} alt='json'/>  
+                <button onClick={() => handleProjectClick('json')} className={`skill ${selectedProjects === 'json' ? 'selected' : ''}`}>
+                    <img className='skill__image' src={json} alt='json' />
                 </button>
-                <button className='skill javascript'>
-                    <img className='skill__image' src={js} alt='javascript'/>  
+                <button onClick={() => handleProjectClick('javascript')} className={`skill ${selectedProjects === 'javascript' ? 'selected' : ''}`}>
+                    <img className='skill__image' src={js} alt='javascript' />
                 </button>
-                <button className='skill express'>
-                    <img className='skill__image' src={express} alt='express'/>
+                <button onClick={() => handleProjectClick('express')} className={`skill ${selectedProjects === 'express' ? 'selected' : ''}`}>
+                    <img className='skill__image' src={express} alt='express' />
                 </button>
-                <button className='skill api'>
-                    <img className='skill__image' src={api} alt='api'/>
+                <button onClick={() => handleProjectClick('api')} className={`skill ${selectedProjects === 'api' ? 'selected' : ''}`}>
+                    <img className='skill__image' src={api} alt='api' />
                 </button>
-                <button className='skill node'>
-                    <img className='skill__image' src={node} alt='node'/>
+                <button onClick={() => handleProjectClick('node')} className={`skill ${selectedProjects === 'node' ? 'selected' : ''}`}>
+                    <img className='skill__image' src={node} alt='node' />
                 </button>
-                <button className='skill auth'>
-                    <img className='skill__image' src={auth} alt='auth'/>
+                <button onClick={() => handleProjectClick('auth')} className={`skill ${selectedProjects === 'auth' ? 'selected' : ''}`}>
+                    <img className='skill__image' src={auth} alt='auth' />
                 </button>
-                <button className='skill heroku'>
-                    <img className='skill__image' src={heroku} alt='heroku'/>
+                <button onClick={() => handleProjectClick('heroku')} className={`skill ${selectedProjects === 'heroku' ? 'selected' : ''}`}>
+                    <img className='skill__image' src={heroku} alt='heroku' />
                 </button>
-                <button className='skill github'>
-                    <img className='skill__image' src={github} alt='github'/>
+                <button onClick={() => handleProjectClick('github')} className={`skill ${selectedProjects === 'github' ? 'selected' : ''}`}>
+                    <img className='skill__image' src={github} alt='github' />
                 </button>
-                <button className='skill dom'>
-                    <img className='skill__image' src={dom} alt='dom'/>
+                <button onClick={() => handleProjectClick('dom')} className={`skill ${selectedProjects === 'dom' ? 'selected' : ''}`}>
+                    <img className='skill__image' src={dom} alt='dom' />
                 </button>
             </section>
-            
-            <ProjectCookies className='react github bootstrap sass javascript auth html'/>
-            <ProjectMyAllergyCompass className='react github bootstrap sass javascript node api express html'/>
-            <ProjectInStock className='react github sass javascript mysql sass javascript node express html' />
-            <ProjectBrainFlix className='react github json sass html javascript' />
-            <ProjectBandSite className='html sass' />
-
+            {(selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'bootstrap' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'auth' || selectedProjects === 'html') && (
+                <ProjectCookies className='selected' />
+            )}
+            {(selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'bootstrap' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'auth' || selectedProjects === 'html') && (
+                <ProjectMyAllergyCompass className='react github bootstrap sass javascript node api express html' />
+            )}
+            {(selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'mysql' || selectedProjects === 'node' || selectedProjects === 'html' || selectedProjects === 'express') && (
+                <ProjectInStock className='react github sass javascript mysql node express html' />
+            )}
+            {(selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'json' || selectedProjects === 'sass' || selectedProjects === 'html' || selectedProjects === 'javascript') && (
+                <ProjectBrainFlix className='react github json sass html javascript' />
+            )}
+            {(selectedProjects === 'html' || selectedProjects === 'sass') && (
+                <ProjectBandSite className='html sass' />
+            )}
         </section>
     )
 }

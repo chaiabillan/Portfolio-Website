@@ -5,7 +5,7 @@ import { Github } from 'react-bootstrap-icons';
 function ProjectCookies() {
 
     return (
-        <section className="project">
+        <section className="project selected">
             <div className='project__top'>
                 <p className='project__top--title'>
                     Chaia's chocolate chip cookies
