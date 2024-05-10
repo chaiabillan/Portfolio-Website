@@ -51,18 +51,22 @@
     @include tablet {
         padding: 32px 105px;
 
+        &__title {
+            font-size: 26px;
+        }
+
         &__options {
             justify-content: center;
 
             &--indiv {
-                font-size: 15px;
+                font-size: 19px;
                 padding: 4px 9px;
             }
         }
     }
 
     @include desktop {
-        padding: 64px 230px;
+        padding: 64px 265px;
 
         &__options {
 

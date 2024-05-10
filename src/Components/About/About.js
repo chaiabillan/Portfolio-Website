@@ -1,30 +1,11 @@
 import './About.scss';
-import { Mortarboard, GeoAltFill } from 'react-bootstrap-icons';
-import Chaia from '../../assets/images/Code-To-Career---January-2024_0014_Chaia-Billan.jpg'
+import { Mortarboard } from 'react-bootstrap-icons';
 
 function About () {
 
     return (
         <section className='about'>
-            <section className='introduction'>
-                <div className='introduction__left'>
-                    <p className='introduction__left--name'>
-                        Hi, I'm Chaia!
-                    </p>
-                    <p className='introduction__left--info introduction__left--info--job'>
-                        Software Engineer
-                    </p>
-                    <p className='introduction__left--info'>
-                        <GeoAltFill className='introduction__left--info--icon'/>
-                        {/* <p>   </p> */}
-                        Vancouver, BC
-                    </p>
-                    <p className='introduction__left--info'>
-                        chaia_billan@yahoo.com
-                    </p>
-                </div>
-                    <img className='introduction__right' src={Chaia} alt='Chaia'/>
-            </section>
+
             <p className='bio'>
                 Software Engineer with a background in Neuroscience.
             </p>

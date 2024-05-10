@@ -31,10 +31,10 @@
     }
 
     @include tablet {
-        height: 412px;
+        height: 680px;
 
         &::after {
-            height: 411px;
+            height: 680px;
         }
 
         &__text {
@@ -45,10 +45,10 @@
     }
 
     @include desktop {
-        height: 600px;
+        height: 913px;
 
         &::after {
-            height: 600px;
+            height: 913px;
         }
 
         &__text {

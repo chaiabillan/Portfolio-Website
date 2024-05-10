@@ -33,6 +33,15 @@ header {
 
     @include tablet {
 
+        &__list {
+            height: 30px;
+            width: 30px;
+        }
+
+        &__name {
+            font-size: 29px;
+        }
+
     }
 
     @include desktop {
