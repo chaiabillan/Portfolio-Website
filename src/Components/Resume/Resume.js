@@ -152,7 +152,7 @@ function Resume() {
 
 
     return (
-        <section className='resume' ref={resumeRef}>
+        <section className='resume' ref={resumeRef} id='resume'>
             <p className='resume__title'>
                 Experience
             </p>

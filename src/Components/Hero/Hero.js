@@ -6,7 +6,7 @@ import Chaia from '../../assets/images/Code-To-Career---January-2024_0014_Chaia-
 function Hero () {
 
     return (
-        <section className='hero'>
+        <section className='hero' id='hero'>
             <section className='introduction'>
                 <div className='introduction__left'>
                     <p className='introduction__left--name'>

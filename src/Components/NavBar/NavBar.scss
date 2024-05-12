@@ -1,0 +1,44 @@
+@use '../../styles/partials/colours' as *;
+@use '../../styles/partials/mixins' as *;
+
+.nav-bar {
+    height: 50px;
+    width: 10px;
+    position: fixed;
+    right: 105px;
+    top: 343px;
+    z-index: 3;
+
+    &__circle {
+        background-color: white;
+        height: 13px;
+        width: 13px;
+        border-radius: 50%;
+        margin-bottom: 65px;
+        cursor: pointer;
+        transition: 0.3s;
+        z-index: 3;
+
+        &:not(:first-child):not(:last-child)::before { // Add line after each circle except the last one
+            content: '';
+            position: absolute;
+            top: 50%; // Align the line to the center of the circle
+            left: 50%; // Align the line to the center of the circle
+            transform: translateX(-50%) translateY(-50%); // Center the line
+            width: 1px; // Width of the line
+            height: 150px; // Height of the line
+            background-color: white; // Color of the line
+            z-index: 0;
+        }
+
+        &.active {
+            background-color: $LightPurple;
+        }
+
+
+        &:hover {
+            background-color: $LightPurple;
+            z-index: 3;
+        }
+    }
+}

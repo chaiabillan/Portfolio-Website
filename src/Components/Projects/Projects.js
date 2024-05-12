@@ -30,9 +30,12 @@ function Projects() {
     }
 
     return (
-        <section className="projects">
+        <section className="projects" id='projects'>
             <p className='projects__title'>
                 Projects
+            </p>
+            <p className='projects__subtitle'>
+                Filter by skill
             </p>
             <section className='skills'>
                 <button className='skill' onClick={() => handleProjectClick(null)}>

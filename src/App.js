@@ -14,12 +14,13 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Header />
-        <Hero />
+        <Hero id='hero'/>
         <About />
-        <Projects />
-        <Resume />
+        <Projects id='projects'/>
+        <Resume id='resume'/>
         {/* <Links /> */}
         <Footer />
+
       </BrowserRouter>
       
     </div>

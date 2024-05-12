@@ -4,12 +4,12 @@ import { Mortarboard } from 'react-bootstrap-icons';
 function About () {
 
     return (
-        <section className='about'>
+        <section className='about' id='about'>
 
-            <p className='bio'>
+            <p className='bio' id='bio'>
                 Software Engineer with a background in Neuroscience.
             </p>
-            <div className='education'>
+            <div className='education' id='education'>
                 <Mortarboard className='education__icon'/>
                 <p className='education__title'>
                     Software Engineering Diploma
