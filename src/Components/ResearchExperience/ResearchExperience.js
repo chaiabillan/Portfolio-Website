@@ -5,7 +5,7 @@ function ResearchExperience() {
 
     return (
         <section className='research'>
-            <img src={brain} className='research__icon' />
+            <img src={brain} className='research__icon' alt='brain' />
             <p className='research__lab'>
                 Perception-Action Lab @ UBC
             </p>
@@ -22,7 +22,7 @@ function ResearchExperience() {
                 Demonstrated attention to detail while thoroughly reviewing video footage of games and practices, meticulously documenting every head impact, including ball delivery specifics and impact locations
             </p>
 
-            <img src={brain} className='research__icon' />
+            <img src={brain} className='research__icon' alt='brain' />
             <p className='research__lab'>
                 Motivated Cognition Lab @ UBC
             </p>
