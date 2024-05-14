@@ -46,13 +46,13 @@ function Resume() {
 
 
     const experiences = [
-        {
-            company: "Chaia's chocolate chip cookies",
-            role: "Founder",
-            date: "March 2024 - Present",
-            className: "cookies",
-            onClick: () => handleResourceClick('founder'),
-        },
+        // {
+        //     company: "Chaia's chocolate chip cookies",
+        //     role: "Founder",
+        //     date: "March 2024 - Present",
+        //     className: "cookies",
+        //     onClick: () => handleResourceClick('founder'),
+        // },
         {
             company: "Emilio Finatti Pizzeria",
             role: "Graphic Designer",

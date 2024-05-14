@@ -64,6 +64,13 @@
     border-radius: 10px;
     margin-top: 10px;
     height: 25px;
+    cursor: pointer;
+
+
+    @include tablet {
+        height: 40px;
+        width: 80px;
+    }
 }
 
 .experience-rectangles {

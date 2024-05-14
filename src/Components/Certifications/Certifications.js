@@ -1,8 +1,5 @@
 import './Certifications.scss';
-import { BrushFill, Backpack2, Tsunami, Hospital, Award } from 'react-bootstrap-icons';
-import mentoring from '../../assets/images/Mentoring.svg';
-import dragonboat from '../../assets/images/Designer (3).svg';
-import family from '../../assets/images/family.png';
+import { Award } from 'react-bootstrap-icons';
 
 
 function Certifications() {
@@ -11,7 +8,7 @@ function Certifications() {
         <section className='research'>
             <Award className='research__icon research__icon--cert' />
             <p className='research__lab research__lab--cert'>
-                TEFL
+                Teaching English as a Foreign Language (TEFL)
             </p>
             <Award className='research__icon research__icon--cert' />
             <p className='research__lab research__lab--cert'>

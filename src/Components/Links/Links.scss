@@ -7,16 +7,55 @@
     bottom: 10px;
     right: 10px;
     color: $DarkPurple;
-    display: flex;
+    display: none;
     flex-direction: column; // Display the spans in a column
-    align-items: flex-end; 
+    align-items: flex-end;
 
     &__indiv {
         // text-align: right;
-        background-color: white;
-        margin: 6px;
+        // background-color: white;
+        margin: 2px;
         padding: 6px;
         font-size: 10px;
         border-radius: 10px;
+
+        &--github {
+            height: 49px;
+        }
+
+        &--linkedin {
+            height: 37px;
+        }
+
+        &--resume {
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+    }
+
+    @include tablet {
+        display: flex;
+    }
+
+    @include desktop {
+        margin: 6px;
+
+        &__indiv {
+
+            &--github {
+                height: 50px;
+            }
+
+            &--linkedin {
+                height: 50px;
+            }
+
+            &--resume {
+                font-size: 15px;
+
+            }
+        }
     }
 }

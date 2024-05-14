@@ -7,7 +7,7 @@ import Hero from './Components/Hero/Hero';
 import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
 import Projects from './Components/Projects/Projects';
-// import Links from './Components/Links/Links';
+import Links from './Components/Links/Links';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <About />
         <Projects id='projects'/>
         <Resume id='resume'/>
-        {/* <Links /> */}
+        <Links />
         <Footer />
 
       </BrowserRouter>

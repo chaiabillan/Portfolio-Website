@@ -2,7 +2,7 @@ import './NavBar.scss';
 import { useState, useEffect } from 'react';
 
 function NavBar () {
-    const [activeComponent, setActiveComponent] = useState('');
+    const [activeComponent, setActiveComponent] = useState('hero');
 
     useEffect(() => {
         // Add scroll event listener to detect which component is in view
@@ -34,10 +34,14 @@ function NavBar () {
         // Attach the scroll event listener when component mounts
         window.addEventListener('scroll', handleScroll);
 
+        window.scrollTo({ top: 0, behavior: 'auto' });
+
         // Clean up the event listener when component unmounts
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
+
+
     }, []);
 
     const scrollToComponent = (componentId) => {

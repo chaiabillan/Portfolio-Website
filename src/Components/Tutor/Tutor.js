@@ -19,6 +19,9 @@ function Tutor({ onGoBack }) {
             <li className='experience-details__list-item'>
                 Assisted in the facilitation of various term projects including English papers and science projects
             </li>
+            <li className='experience-details__list-item'>
+                Helped students boost their grades by up to 30% through personalized tutoring sessions and targeted study strategies.
+            </li>
         </section>
     )
 }

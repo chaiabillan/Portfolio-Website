@@ -1,6 +1,6 @@
-import logo from '../../assets/images/Designer.png';
 import { Link } from 'react-router-dom';
 import { Github } from 'react-bootstrap-icons';
+import website from '../../assets/images/chaiascookieswebsite.png';
 
 function ProjectCookies() {
 
@@ -15,14 +15,14 @@ function ProjectCookies() {
                 </Link>
             </div>
             <div className='project__middle'>
-                <img src={logo} className='project__image' alt='cookies logo' />
+                <Link to='https://chaiascookies.com/'><img src={website} className='project__image' alt='cookies logo' /></Link>
                 <div>
                     <ul className='project__details'>
                         <li className='project__details--item'>
-                            <strong>E-commerce Excellence: </strong> Spearheaded the development of an e-commerce platform, "Chaia's Cookies," employing React, HTML, Sass, and Bootstrap for frontend finesse, while integrating Express, MySQL, and APIs for backend robustness. Implemented user-centric features such as account creation, secure checkout, order tracking, and email notifications, ensuring a seamless shopping experience and efficient business operations.
+                            <strong>Project Leadership and Deployment: </strong> Directed the project lifecycle of "Chaia's Cookies" from ideation to deployment, utilizing GitHub for version control, and currently deploying the application on Heroku for streamlined accessibility. Employed JavaScript for dynamic client-side interactions and server-side processing, ensuring scalability, maintainability, and optimal performance in alignment with industry standards and user expectations.
                         </li>
                         <li className='project__details--item'>
-                        <strong>Project Leadership and Deployment: </strong> Directed the project lifecycle of "Chaia's Cookies" from ideation to deployment, utilizing GitHub for version control and collaborative development, and deploying the application on Heroku for streamlined accessibility. Employed JavaScript for dynamic client-side interactions and server-side processing, ensuring scalability, maintainability, and optimal performance in alignment with industry standards and user expectations.
+                            <strong>E-commerce Excellence: </strong> Spearheaded the development of an e-commerce platform, "Chaia's Cookies," employing React, HTML, Sass, and Bootstrap for frontend, while integrating Express, MySQL, and APIs for backend robustness. Currently implementing user-centric features such as account creation, secure checkout, order tracking, and email notifications, ensuring a seamless shopping experience and efficient business operations.
                         </li>
                     </ul>
                 </div>

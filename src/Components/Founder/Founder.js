@@ -1,6 +1,3 @@
-// import './Founder.scss';
-// import '../../styles/partials/global.scss'
-
 import React from 'react';
 import { ArrowLeft } from 'react-bootstrap-icons';
 

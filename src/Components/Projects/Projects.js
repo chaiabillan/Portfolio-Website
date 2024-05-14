@@ -83,20 +83,20 @@ function Projects() {
                     <img className='skill__image' src={dom} alt='dom' />
                 </button>
             </section>
-            {(selectedProjects === 'all' || selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'bootstrap' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'auth' || selectedProjects === 'html') && (
-                <ProjectCookies className='react github bootstrap sass html javascript auth' />
+            {(selectedProjects === 'all' || selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'bootstrap' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'auth' || selectedProjects === 'html' || selectedProjects === 'dom' || selectedProjects === 'heroku' || selectedProjects === 'api') && (
+                <ProjectCookies className='react github bootstrap sass html javascript auth dom heroku api' />
             )}
-            {(selectedProjects === 'all' || selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'bootstrap' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'api' || selectedProjects === 'node' || selectedProjects === 'html' || selectedProjects === 'express' || selectedProjects === 'heroku' || selectedProjects === 'mysql') && (
-                <ProjectMyAllergyCompass className='react github bootstrap sass javascript heroku node api express html axios mysql' />
+            {(selectedProjects === 'all' || selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'bootstrap' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'api' || selectedProjects === 'node' || selectedProjects === 'html' || selectedProjects === 'express' || selectedProjects === 'heroku' || selectedProjects === 'mysql' || selectedProjects === 'dom') && (
+                <ProjectMyAllergyCompass className='react github bootstrap sass javascript heroku node api express html axios mysql dom' />
             )}
-            {(selectedProjects === 'all' || selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'mysql' || selectedProjects === 'node' || selectedProjects === 'html' || selectedProjects === 'express' || selectedProjects === 'axios') && (
-                <ProjectInStock className='react github sass javascript mysql node express html axios' />
+            {(selectedProjects === 'all' || selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'mysql' || selectedProjects === 'node' || selectedProjects === 'html' || selectedProjects === 'express' || selectedProjects === 'axios' || selectedProjects === 'dom' || selectedProjects === 'api') && (
+                <ProjectInStock className='react github sass javascript mysql node express html axios dom api' />
             )}
-            {(selectedProjects === 'all' || selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'json' || selectedProjects === 'sass' || selectedProjects === 'html' || selectedProjects === 'javascript' || selectedProjects === 'axios' || selectedProjects === 'heroku') && (
-                <ProjectBrainFlix className='react github json sass html javascript axios heroku' />
+            {(selectedProjects === 'all' || selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'json' || selectedProjects === 'sass' || selectedProjects === 'html' || selectedProjects === 'javascript' || selectedProjects === 'axios' || selectedProjects === 'heroku' || selectedProjects === 'dom' || selectedProjects === 'api') && (
+                <ProjectBrainFlix className='react github json sass html javascript axios heroku dom api' />
             )}
-            {(selectedProjects === 'all' || selectedProjects === 'html' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'heroku' || selectedProjects === 'axios' || selectedProjects === 'github') && (
-                <ProjectBandSite className='html sass javascript heroku axios github' />
+            {(selectedProjects === 'all' || selectedProjects === 'html' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'heroku' || selectedProjects === 'axios' || selectedProjects === 'github' || selectedProjects === 'api') && (
+                <ProjectBandSite className='html sass javascript heroku axios github api' />
             )}
         </section>
     )
