@@ -3,7 +3,6 @@ import { Bootstrap } from 'react-bootstrap-icons'
 import MySQL from '../../assets/images/logo-mysql-170x115.png';
 import ReactLogo from '../../assets/images/React.webp';
 import html from '../../assets/images/HTML5_Logo.svg';
-// import css from '../../assets/images/CSS3_logo_and_wordmark.svg';
 import sass from '../../assets/images/kisspng-sass-logo-cascading-style-sheets-scalable-vector-g-codzero-cms-blog-tool-publishing-platform-5b74aaa0de6192.1715579115343725129109.jpg';
 import json from '../../assets/images/kisspng-json-computer-icons-jar-jar-icon-5b21baf3537433.5632766015289372033418.jpg';
 import js from '../../assets/images/JavaScript-Logo.png';
@@ -23,7 +22,7 @@ import { useState } from 'react';
 
 
 function Projects() {
-    const [selectedProjects, setSelectedProjects] = useState(null);
+    const [selectedProjects, setSelectedProjects] = useState('all');
 
     const handleProjectClick = (project) => {
         setSelectedProjects(project)
@@ -38,7 +37,7 @@ function Projects() {
                 Filter by skill
             </p>
             <section className='skills'>
-                <button className='skill' onClick={() => handleProjectClick(null)}>
+                <button onClick={() => handleProjectClick('all')} className={`skill ${selectedProjects === 'all' ? 'selected' : ''}`}>
                     All
                 </button>
                 <button onClick={() => handleProjectClick('bootstrap')} className={`skill ${selectedProjects === 'bootstrap' ? 'selected' : ''}`}>
@@ -84,20 +83,20 @@ function Projects() {
                     <img className='skill__image' src={dom} alt='dom' />
                 </button>
             </section>
-            {(selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'bootstrap' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'auth' || selectedProjects === 'html') && (
-                <ProjectCookies className='selected' />
+            {(selectedProjects === 'all' || selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'bootstrap' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'auth' || selectedProjects === 'html') && (
+                <ProjectCookies className='react github bootstrap sass html javascript auth' />
             )}
-            {(selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'bootstrap' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'auth' || selectedProjects === 'html') && (
-                <ProjectMyAllergyCompass className='react github bootstrap sass javascript node api express html' />
+            {(selectedProjects === 'all' || selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'bootstrap' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'api' || selectedProjects === 'node' || selectedProjects === 'html' || selectedProjects === 'express' || selectedProjects === 'heroku' || selectedProjects === 'mysql') && (
+                <ProjectMyAllergyCompass className='react github bootstrap sass javascript heroku node api express html axios mysql' />
             )}
-            {(selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'mysql' || selectedProjects === 'node' || selectedProjects === 'html' || selectedProjects === 'express') && (
-                <ProjectInStock className='react github sass javascript mysql node express html' />
+            {(selectedProjects === 'all' || selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'mysql' || selectedProjects === 'node' || selectedProjects === 'html' || selectedProjects === 'express' || selectedProjects === 'axios') && (
+                <ProjectInStock className='react github sass javascript mysql node express html axios' />
             )}
-            {(selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'json' || selectedProjects === 'sass' || selectedProjects === 'html' || selectedProjects === 'javascript') && (
-                <ProjectBrainFlix className='react github json sass html javascript' />
+            {(selectedProjects === 'all' || selectedProjects === 'react' || selectedProjects === 'github' || selectedProjects === 'json' || selectedProjects === 'sass' || selectedProjects === 'html' || selectedProjects === 'javascript' || selectedProjects === 'axios' || selectedProjects === 'heroku') && (
+                <ProjectBrainFlix className='react github json sass html javascript axios heroku' />
             )}
-            {(selectedProjects === 'html' || selectedProjects === 'sass') && (
-                <ProjectBandSite className='html sass' />
+            {(selectedProjects === 'all' || selectedProjects === 'html' || selectedProjects === 'sass' || selectedProjects === 'javascript' || selectedProjects === 'heroku' || selectedProjects === 'axios' || selectedProjects === 'github') && (
+                <ProjectBandSite className='html sass javascript heroku axios github' />
             )}
         </section>
     )

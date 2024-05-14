@@ -10,22 +10,19 @@ function ProjectMyAllergyCompass() {
                 <p className='project__top--title'>
                     My Allergy Compass
                 </p>
-                <Link to ='#'>
-                    < Github  className='project__top--github'/>
+                <Link to='https://github.com/chaiabillan/chaia-billan-capstone-client'>
+                    < Github className='project__top--github' />
                 </Link>
             </div>
             <div className='project__middle'>
                 <img src={logo} className='project__image' alt='cookies logo' />
                 <div>
                     <ul className='project__details'>
-                        <li>
-                            createda laskjf;akfj;laksjf;a
+                        <li className='project__details--item'>
+                            <strong>Full-Stack Mastery: </strong> Showcased advanced proficiency in full-stack development through the realization of "My Allergy Compass," leveraging React, Express, and MySQL to construct diverse features including a community forum, emergency phone lookup, and a comprehensive travel guide, all while meticulously adhering to industry-standard practices in code structuring and seamless API integration.
                         </li>
-                        <li>
-                            a;flkajh;fhahfl;aklfjaweoifj;;
-                        </li>
-                        <li>
-                            aoiutopewauhfjka.,czn;oawi
+                        <li className='project__details--item'>
+                            <strong>Project Management Evolution: </strong> Orchestrated the development of "My Allergy Compass," a solo capstone project, by adeptly implementing Agile methodologies for task organization, sprint planning, and efficient time management, culminating in the creation of a robust travel application tailored for individuals with food allergies.
                         </li>
                     </ul>
                 </div>

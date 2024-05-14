@@ -21,7 +21,7 @@ import FamilyPlace from '../FamilyPlace/FamilyPlace';
 
 
 function Resume() {
-    const [selectedResource, setSelectedResource] = useState(null);
+    const [selectedResource, setSelectedResource] = useState('work-experience');
     const [showAllExperiences, setShowAllExperiences] = useState(false);
     const resumeRef = useRef(null);
 
@@ -84,28 +84,28 @@ function Resume() {
         {
             company: "Pharmachoice",
             role: "Pharmacy Technician",
-            date: "Est. 2024",
+            date: "June - November 2021",
             className: "pharmacy",
             onClick: () => handleResourceClick('pharmacy'),
         },
         {
             company: "Response Biomedical Corporation",
             role: "Quality Assurance Assistant",
-            date: "May 2019 - December 2019",
+            date: "May - December 2019",
             className: "bio-lab",
             onClick: () => handleResourceClick('qa-assistant'),
         },
         {
             company: "Waves Coffee House",
             role: "Barista",
-            date: "June 2019 - December 2019",
+            date: "June - December 2019",
             className: "barista",
             onClick: () => handleResourceClick('waves-barista'),
         },
         {
             company: "Starbucks",
             role: "Barista",
-            date: "April 2018 - September 2019",
+            date: "April - September 2018",
             className: "barista",
             onClick: () => handleResourceClick('starbucks-barista'),
         },
@@ -136,14 +136,14 @@ function Resume() {
         {
             company: "New West Community Art Project",
             role: "Co-Founder",
-            date: "January - December 2022",
+            date: "Est. January 2022",
             className: "community-art",
             onClick: () => handleResourceClick('community-art'),
         },
         {
             company: "Family Place",
             role: "Playroom Assistant",
-            date: "2017-2019",
+            date: "January 2017- December 2019",
             className: "family-place",
             onClick: () => handleResourceClick('family-place'),
         }
@@ -170,7 +170,7 @@ function Resume() {
                     Certifications
                 </button>
             </section>
-            <section>
+            <section className='experience__rectangles'>
 
 
                 {selectedResource === 'work-experience' && (

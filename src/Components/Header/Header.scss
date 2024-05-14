@@ -19,6 +19,7 @@ header {
         position: absolute;
         left: 10px;
         color: $White;
+        display: none;
     }
 
     &__name {
@@ -36,12 +37,12 @@ header {
         &__list {
             height: 30px;
             width: 30px;
+            display: none;
         }
 
         &__name {
             font-size: 29px;
         }
-
     }
 
     @include desktop {

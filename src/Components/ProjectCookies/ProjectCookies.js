@@ -8,30 +8,27 @@ function ProjectCookies() {
         <section className="project selected">
             <div className='project__top'>
                 <p className='project__top--title'>
-                    Chaia's chocolate chip cookies
+                    Chaia's Cookies
                 </p>
-                <Link to ='#'>
-                    < Github  className='project__top--github'/>
+                <Link to='#'>
+                    < Github className='project__top--github' />
                 </Link>
             </div>
             <div className='project__middle'>
-                <img src={logo} className='project__image' alt='cookies logo'/>
+                <img src={logo} className='project__image' alt='cookies logo' />
                 <div>
                     <ul className='project__details'>
-                        <li>
-                            createda laskjf;akfj;laksjf;a
+                        <li className='project__details--item'>
+                            <strong>E-commerce Excellence: </strong> Spearheaded the development of an e-commerce platform, "Chaia's Cookies," employing React, HTML, Sass, and Bootstrap for frontend finesse, while integrating Express, MySQL, and APIs for backend robustness. Implemented user-centric features such as account creation, secure checkout, order tracking, and email notifications, ensuring a seamless shopping experience and efficient business operations.
                         </li>
-                        <li>
-                            a;flkajh;fhahfl;aklfjaweoifj;;
-                        </li>
-                        <li>
-                            aoiutopewauhfjka.,czn;oawi
+                        <li className='project__details--item'>
+                        <strong>Project Leadership and Deployment: </strong> Directed the project lifecycle of "Chaia's Cookies" from ideation to deployment, utilizing GitHub for version control and collaborative development, and deploying the application on Heroku for streamlined accessibility. Employed JavaScript for dynamic client-side interactions and server-side processing, ensuring scalability, maintainability, and optimal performance in alignment with industry standards and user expectations.
                         </li>
                     </ul>
                 </div>
             </div>
-            <Link to='#' className='project__link'>
-                www.chaiaschocolatechipcookies.com
+            <Link to='https://chaiascookies.com/' className='project__link'>
+                www.chaiascookies.com
             </Link>
         </section>
     )

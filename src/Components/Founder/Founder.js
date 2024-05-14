@@ -9,12 +9,14 @@ function Founder({onGoBack}) {
     return (
             <section className='experience-details'>
                 <button className='go-back' onClick={onGoBack}>
-                    < ArrowLeft />
+                    < ArrowLeft className='go-back__button' />
                 </button>
                 <p className='experience-details__title'>
-                    Chaia's chocolate chip cookies - Founder - Est. April 2024
+                    Chaia's chocolate chip cookies | Founder 
                 </p>
-
+                <p className='experience-details__date'>
+                    Est. 2024
+                </p>
                 <li className='experience-details__list-item'>
                     i created this business
                 </li>

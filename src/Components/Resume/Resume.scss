@@ -3,7 +3,7 @@
 
 .resume {
     position: relative;
-    top: -2px;
+    top: -3px;
     padding: 45px 16px;
     background-image: linear-gradient(to bottom, $DarkPurple, $LightPurple);
 
@@ -66,7 +66,8 @@
     }
 
     @include desktop {
-        padding: 64px 265px;
+        padding: 64px 165px;
+        // padding: 64px 0px;
 
         &__options {
 

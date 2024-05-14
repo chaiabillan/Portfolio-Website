@@ -1,6 +1,15 @@
 @use '../../styles/partials/colours' as *;
 @use '../../styles/partials/mixins' as *;
 
+// .work-experience {
+//     display: flex;
+//     justify-content: center;
+
+//     @include desktop {
+//         width: 80%;
+
+//     }
+// }
 
 .cookies {
     background-image: url('../../assets/images/classic-chocolate-chip-cookies.jpg');
@@ -55,4 +64,8 @@
     border-radius: 10px;
     margin-top: 10px;
     height: 25px;
+}
+
+.experience-rectangles {
+    width: 70%;
 }

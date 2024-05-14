@@ -22,13 +22,11 @@ function NavBar () {
                 scrollPosition >= about.offsetTop &&
                 scrollPosition < projects.offsetTop
             ) {
-                setActiveComponent('about');
-            } else if (
+                setActiveComponent('about');            } else if (
                 scrollPosition >= projects.offsetTop &&
                 scrollPosition < resume.offsetTop
             ) {
-                setActiveComponent('projects');
-            } else {
+                setActiveComponent('projects');            } else {
                 setActiveComponent('resume');
             }
         };
