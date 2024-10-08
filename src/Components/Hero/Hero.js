@@ -13,7 +13,7 @@ function Hero () {
                         Hi, I'm Chaia!
                     </p>
                     <p className='introduction__left--info introduction__left--info--job'>
-                        Software Engineer
+                        Software Engineer & Neuroscience Researcher
                     </p>
                     <p className='introduction__left--info'>
                         <GeoAltFill className='introduction__left--info--icon'/>
